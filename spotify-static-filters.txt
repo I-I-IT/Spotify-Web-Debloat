@@ -1,0 +1,7 @@
+! 2024-04-26 https://open.spotify.com
+open.spotify.com##.Upqw01TOXETOmR5Td7Dj.encore-inverted-light-set.gQWWCO.ButtonInner-sc-14ud5tc-0
+open.spotify.com##.encore-over-media-set.kVKSMm.ButtonInner-sc-14ud5tc-0
+!removes header containing different products info
+open.spotify.com##.main-view-container__mh-footer-container 
+open.spotify.com##li.rQ6LXqVlEOGZdGIG0LgP:nth-of-type(3)
+open.spotify.com##li.Zb1Lbll48zpXP9k_0m1N:nth-of-type(3)
