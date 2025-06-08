@@ -1,13 +1,5 @@
-! 2024-04-26 https://open.spotify.com
-open.spotify.com##.Upqw01TOXETOmR5Td7Dj.encore-inverted-light-set.gQWWCO.ButtonInner-sc-14ud5tc-0
-open.spotify.com##.encore-over-media-set.kVKSMm.ButtonInner-sc-14ud5tc-0
-!removes header containing different products info
-open.spotify.com##.main-view-container__mh-footer-container 
-open.spotify.com##li.rQ6LXqVlEOGZdGIG0LgP:nth-of-type(3)
-open.spotify.com##li.Zb1Lbll48zpXP9k_0m1N:nth-of-type(3)
-
-open.spotify.com##span[aria-label="New episode"]:upward(4)
-!This would hide New Episode (,arked by blue point) podcasts on homepage, effectively hiding most of them. You will still be able to see podcats by clicking on Podcasts.
+open.spotify.com##:matches-path(/^/$/|/?flow/)span[aria-label="New episode"]:upward(4)
+!This would hide New Episode (,arked by blue point) podcasts on homepage, effectively hiding most of them. You will still be able to see podcats by clicking on Podcasts. June 2025 update: make it not break on podcats pages.
 open.spotify.com##section[aria-label^="Good "] ~section[data-testid="component-shelf"][data-shelf="carousel"]:not(section[aria-label="Your shows)"]):has-text(/Popular with listeners of/)
 !This hides the Podcast recommendations such as "Popular with Listener of". They really take too much space IMO. This doesn't hide the "Your shows" tab with the podcast you have subscribed to.
 
