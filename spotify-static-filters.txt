@@ -6,5 +6,8 @@ open.spotify.com##section[aria-label^="Good "] ~section[data-testid="component-s
 open.spotify.com##span[data-encore-id="text"]:has-text(/Catch up on your shows|Popular with listeners of|Inspired by your recent searches/):upward(4):style(width: 50% !important)
 !This is reducing the size of podcast recommendations in the box at the bottom. If you want to completely remove them from your home screen. copy the line and remove everything after upward(4)
 
+open.spotify.com##div[aria-label="Related music videos"]:upward(4)
+!Removes intrusive and unwanted Related music videos
+
 open.spotify.com##a[data-encore-id="buttonTertiary"][draggable="false"][href="/download"]
 !Download app button
