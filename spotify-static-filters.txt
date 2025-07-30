@@ -1,11 +1,16 @@
+! Title: Spotify Web Debloat
+! Expires: 10 days
+! Homepage: https://github.com/I-I-IT/Spotify-Web-Debloat
+! Description:  Removes unwanted distractions when you just want to listen to some music. All features are still here to enjoy, including podcats -but only if you want to-.
+
 !#if env_chromium
 open.spotify.com:matches-path(//) span[aria-label="New episode"]:upward(4)
-open.spotify.com:matches-path (/\?flow/) span[aria-label="New episode"]:upward(4)
 #Fix for Brave, as its matches-path mechanism is different. Disable if you use non-Brave chromium browser.
-
 !#endif
 
-open.spotify.com##:matches-path(/^/$/|/\?flow/)span[aria-label="New episode"]:upward(4)
+open.spotify.com##:matches-path(/^/$/) span[aria-label="New episode"]:upward(4)
+open.spotify.com##:matches-path(/\?flow/) span[aria-label="New episode"]:upward(4)
+
 !This would hide New Episode (,arked by blue point) podcasts on homepage, effectively hiding most of them. You will still be able to see podcats by clicking on Podcasts. June 2025 update: make it not break on podcats pages.
 open.spotify.com##section[aria-label^="Good "] ~section[data-testid="component-shelf"][data-shelf="carousel"]:not(section[aria-label="Your shows)"]):has-text(/Popular with listeners of/)
 !This hides the Podcast recommendations such as "Popular with Listener of". They really take too much space IMO. This doesn't hide the "Your shows" tab with the podcast you have subscribed to.
@@ -17,4 +22,5 @@ open.spotify.com##div[aria-label="Related music videos"]:upward(4)
 !Removes intrusive and unwanted Related music videos
 
 open.spotify.com##a[data-encore-id="buttonTertiary"][draggable="false"][href="/download"]
-!Download app button
+open.spotify.com##li+div+li[role='presentation']:has(button)
+!Download app buttons
