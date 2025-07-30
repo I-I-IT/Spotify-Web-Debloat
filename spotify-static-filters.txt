@@ -8,7 +8,10 @@ open.spotify.com:matches-path(//) span[aria-label="New episode"]:upward(4)
 #Fix for Brave, as its matches-path mechanism is different. Disable if you use non-Brave chromium browser.
 !#endif
 
+!# if ext_ublock
 open.spotify.com##:matches-path(/^/$/) span[aria-label="New episode"]:upward(4)
+!#endif
+
 open.spotify.com##:matches-path(/\?flow/) span[aria-label="New episode"]:upward(4)
 
 !This would hide New Episode (,arked by blue point) podcasts on homepage, effectively hiding most of them. You will still be able to see podcats by clicking on Podcasts. June 2025 update: make it not break on podcats pages.
