@@ -27,3 +27,7 @@ open.spotify.com##div[aria-label="Related music videos"]:upward(4)
 open.spotify.com##a[data-encore-id="buttonTertiary"][draggable="false"][href="/download"]
 open.spotify.com##li+div+li[role='presentation']:has(button)
 !Download app buttons
+
+!Remove podcast recommendations in homepage
+open.spotify.com##section[aria-label="Audiobooks for you"]
+
