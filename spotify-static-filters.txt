@@ -5,7 +5,7 @@
 
 !#if env_chromium
 open.spotify.com:matches-path(//) span[aria-label="New episode"]:upward(4)
-#Fix for Brave, as its matches-path mechanism is different. Disable if you use non-Brave chromium browser.
+! Fix for Brave, as its matches-path mechanism is different. Disable if you use non-Brave chromium browser.
 !#endif
 
 !#if env_firefox
