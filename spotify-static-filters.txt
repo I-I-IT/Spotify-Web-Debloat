@@ -31,3 +31,5 @@ open.spotify.com##li+div+li[role='presentation']:has(button)
 !Remove podcast recommendations in homepage
 open.spotify.com##section[aria-label="Audiobooks for you"]
 
+!Removes another "Get the app" nudge
+open.spotify.com##li:has(div[aria-labelledby="listrow-title-Switch to the Spotify app"])
